@@ -2,6 +2,6 @@ module.exports = {
   'verbose': true,
   'testEnvironment': 'node',
   'testMatch': [
-    '**/tests/integration/**/*.spec.js',
+    '**/tests/integration/**/random.spec.js',
   ],
 }

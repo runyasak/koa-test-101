@@ -2,7 +2,7 @@ const Koa = require('koa')
 const Router = require('koa-router')
 const koaBody = require('koa-body')
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true })
+mongoose.connect('mongodb://192.168.99.100/test', { useNewUrlParser: true })
 
 const server = new Koa()
 const router = new Router()
@@ -22,8 +22,11 @@ router.get('/captcha', async (ctx, next) => {
   ctx.body = '33445566'
 })
 
+const random = require('./random')
 router.get('/random', async (ctx, next) => {
-  ctx.body = '1111'
+  ctx.body = {
+    number: random.range()
+  }
 })
 
 server
