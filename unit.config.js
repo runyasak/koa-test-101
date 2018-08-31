@@ -1,8 +1,7 @@
 module.exports = {
-    'verbose': true,
-    'testEnvironment': 'node',
-    'testMatch': [
-      '**/tests/unit/**/*.spec.js',
-    ],
+  'verbose': true,
+  'testEnvironment': 'node',
+  'testMatch': [
+    '**/tests/unit/**/*.spec.js',
+  ],
 }
-  
