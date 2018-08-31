@@ -1,7 +1,5 @@
 const random = {
-  range () {
-    const min = 1
-    const max = 10
+  range (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min
   }
 }
